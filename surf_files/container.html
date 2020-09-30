@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html -->
+<html class="mti-inactive"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>SafeFrame Container</title>
+    <script>
+(function(){var n=this||self;var w={};var y=function(a){y[" "](a);return a};y[" "]=function(){};var B=null,G=function(a){var b=a.length,c=3*b/4;c%3?c=Math.floor(c):-1!="=.".indexOf(a[b-1])&&(c=-1!="=.".indexOf(a[b-2])?c-2:c-1);var d=new Uint8Array(c),f=0;C(a,function(g){d[f++]=g});return d.subarray(0,f)},C=function(a,b){function c(q){for(;d<a.length;){var e=a.charAt(d++),k=B[e];if(null!=k)return k;if(!/^[\s\xa0]*$/.test(e))throw Error("Unknown base64 encoding at char: "+e);}return q}H();for(var d=0;;){var f=c(-1),g=c(0),h=c(64),p=c(64);if(64===p&&-1===f)break;b(f<<2|g>>4);64!=h&&(b(g<<4&240|h>>2),64!=p&&b(h<<6&192|p))}},H=function(){if(!B){B={};for(var a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),b=["+/=","+/","-_=","-_.","-_"],c=0;5>c;c++)for(var d=a.concat(b[c].split("")),f=0;f<d.length;f++){var g=d[f];void 0===B[g]&&(B[g]=f)}}};var I=function(a,b){if(a)for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(void 0,a[c],c,a)};var J=function(a,b){var c=void 0===c?{}:c;this.error=a;this.context=b.context;this.msg=b.message||"";this.id=b.id||"jserror";this.meta=c};var K=/^https?:\/\/(\w|-)+\.cdn\.ampproject\.(net|org)(\?|\/|$)/,L=function(a,b){this.a=a;this.b=b},M=function(a,b){this.url=a;this.g=!!b;this.depth=null};var N=function(a){n.google_image_requests||(n.google_image_requests=[]);var b=n.document.createElement("img");b.src=a;n.google_image_requests.push(b)};var O=function(){this.c="&";this.f=!1;this.b={};this.i=0;this.a=[]},Q=function(a,b){var c={};c[a]=b;return[c]},S=function(a,b,c,d,f){var g=[];I(a,function(h,p){(h=R(h,b,c,d,f))&&g.push(p+"="+h)});return g.join(b)},R=function(a,b,c,d,f){if(null==a)return"";b=b||"&";c=c||",$";"string"==typeof c&&(c=c.split(""));if(a instanceof Array){if(d=d||0,d<c.length){for(var g=[],h=0;h<a.length;h++)g.push(R(a[h],b,c,d+1,f));return g.join(c[d])}}else if("object"==typeof a)return f=f||0,2>f?encodeURIComponent(S(a,b,c,d,f+1)):"...";return encodeURIComponent(String(a))},T=function(a,b,c,d){a.a.push(b);a.b[b]=Q(c,d)},V=function(a){var b="https://pagead2.googlesyndication.com/pagead/gen_204?id=jserror&",c=U(a)-27;if(0>c)return"";a.a.sort(function(k,m){return k-m});for(var d=null,f="",g=0;g<a.a.length;g++)for(var h=a.a[g],p=a.b[h],q=0;q<p.length;q++){if(!c){d=null==d?h:d;break}var e=S(p[q],a.c,",$");if(e){e=f+e;if(c>=e.length){c-=e.length;b+=e;f=a.c;break}a.f&&(f=c,e[f-1]==a.c&&--f,b+=e.substr(0,f),f=a.c,c=0);d=null==d?h:d}}a="";null!=d&&(a=f+"trn="+d);return b+a+""},U=function(a){var b=1,c;for(c in a.b)b=c.length>b?c.length:b;return 3997-b-a.c.length-1};var W=function(a){if(.01>Math.random())try{if(a instanceof O)var b=a;else b=new O,I(a,function(d,f){var g=b,h=g.i++;d=Q(f,d);g.a.push(h);g.b[h]=d});var c=V(b);c&&N(c)}catch(d){}};var X=function(a){var b=a.toString();a.name&&-1==b.indexOf(a.name)&&(b+=": "+a.name);a.message&&-1==b.indexOf(a.message)&&(b+=": "+a.message);if(a.stack){a=a.stack;var c=b;try{-1==a.indexOf(c)&&(a=c+"\n"+a);for(var d;a!=d;)d=a,a=a.replace(/((https?:\/..*\/)[^\/:]*:\d+(?:.|\n)*)\2/,"$1");b=a.replace(/\n */g,"\n")}catch(f){b=c}}return b};var Y=function(a){if(!a)return a;var b=a.toLowerCase();return-1<b.indexOf("<!doctype")||-1<b.indexOf("<html")?a:"<html><head></head><body>"+a+"</body></html>"},Z=function(a){var b=/<startguard>(.*)<endguard>/g.exec(a);return b&&b[1]?b[1]:a};var aa=new function(){this.a=w===w&&"https://ff.doubleclick.net"||""};var ba=/^([^;]+);(\d+);([\s\S]*)$/,ca=function(){var a=window.name,b=ba.exec(a);if(null===b)throw Error("Cannot parse serialized data. "+a.substring(0,50));a=+b[2];var c=b[3];if(a>c.length)throw Error("Parsed content size doesn't match. "+a+":"+c.length);return{j:b[1],content:c.substr(0,a),h:c.substr(a)}};var da=/(<head(\s+[^>]*)?>)/i;(function(a){if(window.name){var b=function(e){try{var k=new O;k.f=!0;T(k,1,"context",507);e.error&&e.meta&&e.id||(e=new J(e,{message:X(e)}));e.msg&&T(k,2,"msg",e.msg.substring(0,512));var m=[e.meta||{}];k.a.push(3);k.b[3]=m;e=n;m=[];var D=null;do{var l=e;try{var z;if(z=!!l&&null!=l.location.href)b:{try{y(l.foo);z=!0;break b}catch(A){}z=!1}var P=z}catch(A){P=!1}if(P){var t=l.location.href;D=l.document&&l.document.referrer||null}else t=D,D=null;m.push(new M(t||""));try{e=l.parent}catch(A){e=null}}while(e&&l!=e);t=0;for(var u=m.length-1;t<=u;++t)m[t].depth=u-t;l=n;if(l.location&&l.location.ancestorOrigins&&l.location.ancestorOrigins.length==m.length-1)for(u=1;u<m.length;++u){var v=m[u];v.url||(v.url=l.location.ancestorOrigins[u-1]||"",v.g=!0)}var E=new M(n.location.href,!1);l=null;var F=m.length-1;for(v=F;0<=v;--v){var r=m[v];!l&&K.test(r.url)&&(l=r);if(r.url&&!r.g){E=r;break}}r=null;var ea=m.length&&m[F].url;0!=E.depth&&ea&&(r=m[F]);var x=new L(E,r);x.b&&T(k,4,"top",x.b.url||"");T(k,5,"url",x.a.url||"");W(k)}catch(A){try{W({context:"ecmserr",rctx:507,msg:X(A),url:x&&x.a.url})}catch(fa){}}};try{var c=ca(),d=JSON.parse(c.h),f=function(e){d.goog_safeframe_hlt&&(n.goog_safeframe_hlt=d.goog_safeframe_hlt);d._context&&(n.AMP_CONTEXT_DATA=d._context);n.sf_={v:c.j,cfg:d};var k=window.document;k.open("text/html","replace");k.write(e);k.close();n.sf_&&(window.name="")},g=void 0===d.encryptionMode?null:d.encryptionMode,h=d.secureFetchFrame,p=d.uid;if(h){var q=new MessageChannel;q.port1.onmessage=function(e){e=Y(e.data).replace(da,'$1<script>window.addEventListener("load", function() {window.parent.postMessage("sf-load:'+(p+'", "*");});\x3c/script>'));a(e,g,f,b);q.port1.close()};window.parent.frames[h].postMessage("sf-ready:"+p,aa.a,[q.port2])}else window.name="",a(c.content,g,f,b)}catch(e){b(e)}}})(function(a,b,c){2===b&&(a=Y((new TextDecoder).decode(G(Z(a)))));c(a)});}).call(this);
+    </script><meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><script>var jscVersion = 'r20200924';</script><script>var google_casm=[];</script><script></script><style>@font-face {
+  font-family:'Proxima N W01 Smbd';
+}
+
+@font-face {
+  font-family:'Proxima N W01 Reg';
+}
+
+@font-face {
+  font-family:'Proxima N W01 Bold';
+}
+
+
+p {
+  margin: 0px;
+}
+
+body {
+	height: 270px;
+	width: 100%;
+}
+
+#creative-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1605px;
+  font-family: 'Proxima N W01 Reg', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+#flex-frame-wrapper {
+  width: 100%;
+  height: 270px;
+  
+    /* border issue fix by tanvir - added on 10.8.2019 */
+  box-sizing: border-box;
+}
+
+/*
+.context-bullet {
+  color: black;
+  width: 100%;
+  padding-left: 10px;
+  height: 30px;
+  display: table;
+}
+
+.context-bullet-content {
+  font-family: 'Proxima N W01 Smbd', sans-serif;
+  font-size: 12px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  visibility: hidden;
+  display: table-cell;
+}
+
+.context-bullet-content span {
+  font-family: 'Proxima N W01 Reg', sans-serif;
+  font-size: 12px;
+}
+*/
+
+/* Breakpoints for navigation edge */
+
+
+@media screen and (min-width: 1605px) {
+  #creative-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1605px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #creative-wrapper {
+    display: none;
+  }
+}
+
+
+</style><style type="text/css" id="mti_fontface_4221a460-4ed2-4039-a07f-d1f4a2739cad">@font-face{
+font-family:"Proxima N W01 Reg";
+src:url("https://fast.fonts.net/dv2/14/64017d81-9430-4cba-8219-8f5cc28b923e.woff2?d44f19a684109620e484147faf90e818e91fbfe6a113aa2749f26bfa29c567201013b729c4701c6018a692b15a42ad2f5ccab08c40c012f3f760269f734724b070bc4b6d&projectId=4221a460-4ed2-4039-a07f-d1f4a2739cad") format('woff2');}
+@font-face{
+font-family:"Proxima N W01 Smbd";
+src:url("https://fast.fonts.net/dv2/14/ae47a7f5-89da-4879-b934-29722c3dd451.woff2?d44f19a684109620e484147faf90e818e91fbfe6a113aa2749f26bfa29c567201013b729c4701c6018a692b15a42ad2f5ccab08c40c012f3f760269f734724b070bc4b6d&projectId=4221a460-4ed2-4039-a07f-d1f4a2739cad") format('woff2');}
+@font-face{
+font-family:"Proxima N W01 Bold";
+src:url("https://fast.fonts.net/dv2/14/0d416408-95c6-4ad7-b08d-e60573d3b37d.woff2?d44f19a684109620e484147faf90e818e91fbfe6a113aa2749f26bfa29c567201013b729c4701c6018a692b15a42ad2f5ccab08c40c012f3f760269f734724b070bc4b6d&projectId=4221a460-4ed2-4039-a07f-d1f4a2739cad") format('woff2');}
+</style><script type="text/javascript" src="./mt.js.download"></script><link id="MonoTypeFontApiFontTracker" type="text/css" rel="stylesheet" href="./1.css"></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><div class="GoogleActiveViewInnerContainer" style="left:0px;top:0px;width:100%;height:100%;position:fixed;pointer-events:none;z-index:-9999;"></div><script src="./ext.js.download"></script><script>window.dicnf = {};</script><script data-jc="42" data-jc-version="r20200924">(function(){/*  Copyright The Closure Library Authors. SPDX-License-Identifier: Apache-2.0 */ 'use strict';window.viewReq=[];const c=a=>{fetch(a,{keepalive:!0,credentials:"include",redirect:"follow",method:"get",mode:"no-cors"}).catch(()=>{{const b=new Image;b.src=a.replace("&amp;","&");viewReq.push(b)}})};window.vu=a=>{if(window.fetch)c(a);else{{const b=new Image;b.src=a.replace("&amp;","&");viewReq.push(b)}}};}).call(this);</script><script>vu("https://securepubads.g.doubleclick.net/pcs/view?xai\x3dAKAOjssAi-BrC_QLRQhUJQMaZJQNykt7GivEmswUPAWqoz0R9zaQFFb8_ux3oIZ4jTyAjv8TdhRTNyqnQZKaJoAcYtnWx3UzREOGMsH9QUkkgq0fsR0gdg38DgL2dRIXMWzL4F6jW415nqZMhR7aKg2m-6LYaRrC5PHm6a2ZCcFhKcWf5crP0NEHnORjCOg6daf_YpkCdpJjyEpNxWBrjQx-CvcdaBI5Gs73Oxdd3VUDhHgBSzqU7CePZrmLlkj92PXEvtFYdg2HO6RQnutHimmbuk6RmfVYfVPNN_wU0Q\x26sig\x3dCg0ArKJSzD7LPWx8tYmtEAE\x26urlfix\x3d1\x26adurl\x3d")</script><div class="GoogleActiveViewElement" data-google-av-cxn="https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjsv1Zs5QqUu97CKc48M-UtHvMAceCFgZVXgXWP6PuxQSpZOokkNQtCs2HZXxCJ-68NDAfVgRQT1-WCIZSlT8_-zZlTGozvNz8xtNPcq1kdE&amp;sig=Cg0ArKJSzAYo7e9TcU_NEAE" data-google-av-adk="2532710328" data-google-av-metadata="la=0&amp;xdi=0&amp;" data-google-av-override="-1" data-google-av-dm="2" data-google-av-immediate="" data-google-av-aid="0" data-google-av-naid="1" data-google-av-slift="" data-google-av-cpmav="" data-google-av-btr="https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjst6DiHGOyN87-UKnhdw0VgLnGURjkzAxbCrkNJ-QAzC0ECjBXvMVx1F5R7gdowtlWhCvtyXtQIimQptx40KvscMzxwmr6ZGT4ZUVzcPjS5gnE8uvVsQo2U-Fw0hHnE5Wn2EmmL8HcAaWiLJa0jbOFGOIUFUQNavIX9aKgrxTVIrsul86ap_6ZlqI5wzX-qrIPu4gerFgsfeKY1IqyhVtsIphxQ9Bd6WMuXtCMrqnDFiRv3BG5cCT8p0u7-1FQdvPrKcnCFONz4D8WIyW9QsUA&amp;sig=Cg0ArKJSzDVH3GL9pbqPEAE&amp;urlfix=1&amp;adurl=" data-google-av-itpl="7" data-google-av-rs="4"><!--[Custom] Third Party Flex Frame (Desktop)
+
+Updated: 04-24 4:06pm
+
+
+-->
+
+<div id="creative-wrapper" class="creative-wrapper">
+  <!--<div class="context-bullet">
+    <div class="context-bullet-content">Advertisement <span>Indicator</span></div>
+  </div>
+  -->
+    <div id="flex-frame-wrapper">
+      <script src="./mraid.js.download"></script><script src="./adServer.bs"></script><script src="./PL_DeluxeBanner.js.download"></script><script src="./PL_DeluxeBanner_Plugin_NYT.js.download"></script><div id="ebDiv12990996630728202" dir="ltr" style="display: block; width: 1605px; height: 270px; margin: 0px auto 0px 0px; min-width: 320px; min-height: 270px; max-height: 380px;"><div id="ebBannerDiv_1081194028_12990996630728202" dir="ltr" style="border: 0px; padding: 0px; margin: 0px; top: 0px; left: 0px; overflow: visible; font-size: 0px; line-height: 0px; text-align: left; display: inline;"><iframe marginheight="0px" marginwidth="0px" frameborder="0" scrolling="no" allow="autoplay" id="ebBannerIFrame_1081194028_12990996630728202" name="ebBannerIFrame_1081194028_12990996630728202" onload="(function(e) { var event = new EBG.Events.Event(EBG.Events.EventNames.ELEMENT_LOADED);event.dispatcher = this;event.eventData = { DOMEvent: e, elementId: &quot;ebBannerIFrame_1081194028_12990996630728202&quot;, adUId:&quot;1081194028_12990996630728202&quot; };event.timing = EBG.Events.EventTiming.ONTIME_AND_AFTER;EBG.eventMgr.dispatchEvent(event);} )(typeof arguments != &quot;undefined&quot; ? arguments[0] : null);" width="1" height="1" allowfullscreen="true" style="border: 0px; padding: 0px; margin: 0px; width: 1605px; height: 270px; min-width: 320px; min-height: 270px; max-height: 380px;" src="./saved_resource.html"></iframe></div></div>
+<noscript>
+<a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuGTaoPbM-sXEe0UsGBV9gi9lhNNJdyrl58WAliJBP8pJh_7r7oevp7AhE_RAedHwn-rDOLRur2PTW4I_lQcqXVEEMQpAhiEP9BGE_CJyXKhNcMN1bR1G_zWwXW93fSOdtzklhtmDMuAcZxGEMORrjnItEI1msD3mS7pzyAUW11eYz2Hdc5A1WG8DgNftKWpv11D64TnhdKmu6w5Nd7J50MUloX8jTX_XwdWP1m5X8i1cS6gVs8Z6rWHsJJxNl6heLIcjG9vSI&sig=Cg0ArKJSzEO23HjYLYHYEAE&urlfix=1&adurl=https://bs.serving-sys.com/Serving/adServer.bs?cn=brd&pli=1075721513&gdpr=&gdpr_consent=&Page=&Pos=-124305712" target="_blank">
+<img src="https://bs.serving-sys.com/Serving/adServer.bs?c=8&cn=display&pli=1075721513&gdpr=&gdpr_consent=&Page=&Pos=-124305712&pcp=$$page_view_id=cWQBEYFZcPWfCbUz-OmYfMrp&pos=top$$" border=0 width=1 height=1></a>
+</noscript>
+      <script src="./ebHtml5PoliteBanner_api.js.download"></script><script type="text/javascript" async="" src="./URLUtil.js.download"></script><script type="text/javascript" async="" src="./SafeFrameVisibilityProvider.js.download"></script></div>
+</div>
+
+
+<script type="text/javascript" src="./4221a460-4ed2-4039-a07f-d1f4a2739cad.js.download"></script>
+
+<!--
+<script type="text/javascript">
+(function() {
+  var header = document.getElementsByClassName('context-bullet')[0];
+  var headerContent = document.getElementsByClassName('context-bullet-content')[0];
+  var noHeaderPages = ['hp', 'int', 'art', 'art,rev', 'art,oak'];
+  var pageType = 'art';
+  var pagePos = 'top';
+  var pageID = '100000007016196';
+  var prop = 'nyt';
+
+  if (pagePos === 'top') {
+      if (noHeaderPages.indexOf(pageType) > -1) {
+      header.style.display = 'none';
+    } else {
+      headerContent.style.display = 'none';
+    } 
+  }	else if (prop === 'itabapp') {
+    headerContent.style.visibility = 'visible';
+  } else if (pageType === 'hp') {
+    header.style.display = 'none';
+  } else {
+    headerContent.style.visibility = 'visible';
+  }
+})();
+</script>
+-->
+
+<script type="text/javascript">
+parent.postMessage({exclusive: false, type: 'family-plan', div:'top'},'*');
+</script>
+<div style="display:none">
+<img src="./B24630102.280465031" border="0" height="1" width="1" alt="Advertisement">
+</div>
+</div><script src="./osd_listener.js.download"></script><script type="text/javascript">osdlfm(-1,'','BWd_b-JFzX8D2JdLq-gODkLMwAAAAABABOAHIAQnAAgLgAgDgBAGgBh_SCAUIgGEQAQ','',2532710328,true,'la\x3d0\x26xdi\x3d0\x26',3,'CAASEuRovHbORGZx1QQglEgl1XfWew','https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjsv1Zs5QqUu97CKc48M-UtHvMAceCFgZVXgXWP6PuxQSpZOokkNQtCs2HZXxCJ-68NDAfVgRQT1-WCIZSlT8_-zZlTGozvNz8xtNPcq1kdE\x26sig\x3dCg0ArKJSzAYo7e9TcU_NEAE','');</script><div style="bottom:0;right:0;width:100px;height:100px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:pixelated !important;z-index:2147483647;background-image:url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB7SURBVBjTbZGLEcAgCEPDBtl/2pbwETyx18oRwysC77AI3/nqjKr6mzyZFBhLmVf4yxibzrpuuNTpHdryzt52kVTIenIj9XrUJHRc5gxuZO/yhi09hHxxH/4Fkj9ZPM3d2j3BFuqzJpjYa4Kl1JlWzzva3gXNQZLEcfoDLfIFmaXt3pcAAAAASUVORK5CYII=&#39;) !important;"></div>
+  
+  
+  
+
+</body></html>
